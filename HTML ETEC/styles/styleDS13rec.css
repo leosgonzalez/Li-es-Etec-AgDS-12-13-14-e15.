@@ -1,0 +1,45 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: black;
+    color: white;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 36px;
+    color: rgb(212, 0, 255);
+}
+
+.galeria {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 10px;
+}
+
+.coluna {
+    margin-bottom: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.coluna h2 {
+    font-size: 20px;
+    color: rgb(212, 26, 116);
+    margin-bottom: 10px;
+}
+.coluna img{
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    margin: 10px 10px 10px 0;
+    border-radius: 2px;
+}
+
+.titulo{
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 36px;
+    color: rgb(212, 0, 255);
+}
