@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projeto CPS - Docentes</title>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="../styles/styleDS16.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+  <div class="navbar w3-bar w3-black">
+    <a href="#home" class="w3-bar-item w3-button">Home</a>
+    <a href="#curso" class="w3-bar-item w3-button">Sobre o Curso</a>
+    <a href="#grade" class="w3-bar-item w3-button">Grade Curricular</a>
+    <a href="#docentes" class="w3-bar-item w3-button w3-teal">Docentes <i class="fa fa-address-card"></i></a>
+    <a href="#mercado" class="w3-bar-item w3-button">Mercado de Trabalho</a>
+  </div>
+
+  <section id="home" class="w3-container w3-padding-32">
+    <h2>Bem-vindo</h2>
+    <p>Este site apresenta informações sobre o curso, seus docentes, grade curricular e oportunidades no mercado.</p>
+  </section>
+
+  <section id="curso" class="w3-container w3-light-grey w3-padding-32">
+    <h2>Sobre o Curso</h2>
+    <p>O curso é focado em preparar os alunos para atuar no desenvolvimento de sistemas e soluções digitais.</p>
+  </section>
+
+  <section id="grade" class="w3-container w3-padding-32">
+    <h2>Grade Curricular</h2>
+    <ul>
+      <li>Lógica de Programação</li>
+      <li>Banco de Dados</li>
+      <li>Programação Web</li>
+      <li>Engenharia de Software</li>
+    </ul>
+  </section>
+
+  <section id="docentes" class="w3-container w3-light-grey w3-padding-32">
+    <h2 class="w3-center">Docentes</h2>
+
+    <div class="w3-content w3-display-container" style="max-width:900px">
+      
+      <div class="mySlides w3-white w3-card w3-padding">
+        <div class="docente-container">
+          <div class="docente-img">
+            <img src="../imgs/francesca.jpg" alt="Francesca Amendoa Carvalho">
+          </div>
+          <div class="docente-info">
+            <h3>Francesca Amendoa Carvalho</h3>
+            <h4>Formação Acadêmica</h4>
+            <p>Graduada em Tecnologia em Processamento de Dados pela Faculdade de São Paulo (FAP)</p>
+            <p>Mestrado em Computação pelo Centro Universitário São Luiz (2018)</p>
+            <h4>Atuação Profissional</h4>
+            <p>Docente em todas as Faculdades Federais de Educação de Maringá</p>
+            <p>Experiência em desenvolvimento de sistemas e educação</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="mySlides w3-white w3-card w3-padding" style="display:none">
+        <div class="docente-container">
+          <div class="docente-img">
+            <img src="../imgs/marcio.jpg" alt="Márcio Soares">
+          </div>
+          <div class="docente-info">
+            <h3>Márcio Soares</h3>
+            <h4>Formação Acadêmica</h4>
+            <p>Graduado em Ciência da Computação pela UFSCar (2009)</p>
+            <p>Mestrado em Ciência da Computação pela UFSCar (2010)</p>
+            <h4>Atuação Profissional</h4>
+            <p>Desenvolvedor Sênior na TechSolutions</p>
+            <p>Professor de programação avançada</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="mySlides w3-white w3-card w3-padding" style="display:none">
+        <div class="docente-container">
+          <div class="docente-img">
+            <img src="../imgs/ana2.jpg" alt="Ana Beatriz Silva">
+          </div>
+          <div class="docente-info">
+            <h3>Ana Beatriz Silva</h3>
+            <h4>Formação Acadêmica</h4>
+            <p>Graduada em Engenharia de Software pela UNICAMP (2015)</p>
+            <p>Doutorado em Inteligência Artificial pela USP (2020)</p>
+            <h4>Atuação Profissional</h4>
+            <p>Pesquisadora em IA aplicada à educação</p>
+            <p>Coordenadora de projetos tecnológicos</p>
+          </div>
+        </div>
+      </div>
+
+      <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+      <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+    </div>
+  </section>
+
+  <section id="mercado" class="w3-container w3-padding-32">
+    <h2>Mercado de Trabalho</h2>
+    <p>Os formados podem atuar em empresas de tecnologia, consultorias, startups e órgãos públicos.</p>
+  </section>
+
+  <script>
+    let slideIndex = 1;
+    showDivs(slideIndex);
+
+    function plusDivs(n) {
+      showDivs(slideIndex += n);
+    }
+
+    function showDivs(n) {
+      let i;
+      let x = document.getElementsByClassName("mySlides");
+      if (n > x.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = x.length}
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      x[slideIndex - 1].style.display = "block";
+    }
+  </script>
+<footer class="w3-center w3-black w3-padding-16">
+  <p>&copy; 2025 Projeto CPS — Todos os direitos reservados.</p>
+</footer>
+
+</body>
+</html>
